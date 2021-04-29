@@ -1,0 +1,74 @@
+Please input the file pathname: _a3.txt
+
+> startNewDay|01-Jan-2021
+
+> listEmployees
+
+> hire|Bob
+Done.
+
+> hire|Adam
+Done.
+
+> hire|Gabriel
+Done.
+
+> hire|Samuel
+Done.
+
+> hire|Samuel
+Employee name already exists!  
+
+> hire
+Insufficient command arguments.
+
+> listEmployees
+Adam
+Bob
+Gabriel
+Samuel
+
+> undo
+
+> undo
+
+> undo
+
+> undo
+
+> listEmployees
+
+> undo
+Nothing to undo.
+
+> listEmployees
+
+> redo
+
+> redo
+
+> redo
+
+> redo
+
+> redo
+Nothing to redo.
+
+> redo
+Nothing to redo.
+
+> listEmployees
+Adam
+Bob
+Gabriel
+Samuel
+
+> hire|Peter
+Done.
+
+> listEmployees
+Adam
+Bob
+Gabriel
+Peter
+Samuel

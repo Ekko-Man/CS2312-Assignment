@@ -1,0 +1,51 @@
+Please input the file pathname: _c3.txt
+
+> startNewDay|01-Jan-2021    
+
+> createProject|TSUEN WAN GAS
+Project created: [P001] TSUEN WAN GAS (1-Jan-2021)
+
+> createProject
+Insufficient command arguments.
+
+> startNewDay|02-Feb-2021
+Done.
+
+> createProject|KWAI CHUNG SEWAGE
+Project created: [P002] KWAI CHUNG SEWAGE (2-Feb-2021)
+
+> listProjects
+Code     Project Title          Created on   Status       Assigned to   Assigned on  Completed on 
+P001     TSUEN WAN GAS          1-Jan-2021   Pending      --            --           --
+P002     KWAI CHUNG SEWAGE      2-Feb-2021   Pending      --            --           --
+
+> undo
+
+> listProjects
+Code     Project Title          Created on   Status       Assigned to   Assigned on  Completed on 
+P001     TSUEN WAN GAS          1-Jan-2021   Pending      --            --           --
+
+> createProject|CENTRIAL OIL
+Project created: [P002] CENTRIAL OIL (2-Feb-2021)
+
+> createProject|KWAI CHUNG SEWAGE
+Project created: [P003] KWAI CHUNG SEWAGE (2-Feb-2021)
+
+> redo
+Nothing to redo.
+
+> listProjects
+Code     Project Title          Created on   Status       Assigned to   Assigned on  Completed on 
+P001     TSUEN WAN GAS          1-Jan-2021   Pending      --            --           --
+P002     CENTRIAL OIL           2-Feb-2021   Pending      --            --           --
+P003     KWAI CHUNG SEWAGE      2-Feb-2021   Pending      --            --           --
+
+> undo
+
+> undo
+
+> undo
+
+> listProjects
+Code     Project Title          Created on   Status       Assigned to   Assigned on  Completed on 
+P001     TSUEN WAN GAS          1-Jan-2021   Pending      --            --           --

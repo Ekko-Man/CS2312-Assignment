@@ -1,0 +1,181 @@
+Please input the file pathname: _b2.txt
+
+> startNewDay|01-Jan-2021
+
+> hire|Bob
+Done.
+
+> hire|Adam
+Done.
+
+> hire|Gabriel
+Done.
+
+> hire|Samuel
+Done.
+
+> hire|Peter
+Done.
+
+> setupTeam|SW Experts|Samuel   
+Done.
+
+> startNewDay|05-Feb-2021       
+Done.
+
+> setupTeam|Gas+Oil Gang|Gabriel
+Done.
+
+> hire|Andrew
+Done.
+
+> hire|Steven
+Done.
+
+> hire|Simon
+Done.
+
+> hire|Spencer
+Done.
+
+> joinTeam|SW Experts|Steven    
+Done.
+
+> joinTeam|SW Experts|Simon     
+Done.
+
+> joinTeam|SW Experts|Spencer   
+Done.
+
+> listTeams
+Team Name      Leader    Setup Date   Members
+Gas+Oil Gang   Gabriel   5-Feb-2021   (no member)
+SW Experts     Samuel    1-Jan-2021   Simon, Spencer, Steven
+
+> setupTeam|All-rounder|Adam
+Done.
+
+> joinTeam|All-rounder|Andrew
+Done.
+
+> hire|Sawyer
+Done.
+
+> joinTeam|SW Experts|Sawyer
+Done.
+
+> undo
+
+> undo
+
+> undo
+
+> undo
+
+> listTeams
+Team Name      Leader    Setup Date   Members
+Gas+Oil Gang   Gabriel   5-Feb-2021   (no member)
+SW Experts     Samuel    1-Jan-2021   Simon, Spencer, Steven
+
+> redo
+
+> listEmployees
+Adam (All-rounder)
+Andrew
+Bob
+Gabriel (Gas+Oil Gang)
+Peter
+Samuel (SW Experts)
+Simon (SW Experts)
+Spencer (SW Experts)
+Steven (SW Experts)
+
+> redo
+
+> listTeams
+Team Name      Leader    Setup Date   Members
+All-rounder    Adam      5-Feb-2021   Andrew
+Gas+Oil Gang   Gabriel   5-Feb-2021   (no member)
+SW Experts     Samuel    1-Jan-2021   Simon, Spencer, Steven
+
+> listEmployees
+Adam (All-rounder)
+Andrew (All-rounder)
+Bob
+Gabriel (Gas+Oil Gang)
+Peter
+Samuel (SW Experts)
+Simon (SW Experts)
+Spencer (SW Experts)
+Steven (SW Experts)
+
+> redo
+
+> listTeams
+Team Name      Leader    Setup Date   Members
+All-rounder    Adam      5-Feb-2021   Andrew
+Gas+Oil Gang   Gabriel   5-Feb-2021   (no member)
+SW Experts     Samuel    1-Jan-2021   Simon, Spencer, Steven
+
+> listEmployees
+Adam (All-rounder)
+Andrew (All-rounder)
+Bob
+Gabriel (Gas+Oil Gang)
+Peter
+Samuel (SW Experts)
+Sawyer
+Simon (SW Experts)
+Spencer (SW Experts)
+Steven (SW Experts)
+
+> redo
+
+> listTeams
+Team Name      Leader    Setup Date   Members
+All-rounder    Adam      5-Feb-2021   Andrew
+Gas+Oil Gang   Gabriel   5-Feb-2021   (no member)
+SW Experts     Samuel    1-Jan-2021   Sawyer, Simon, Spencer, Steven
+
+> listEmployees
+Adam (All-rounder)
+Andrew (All-rounder)
+Bob
+Gabriel (Gas+Oil Gang)
+Peter
+Samuel (SW Experts)
+Sawyer (SW Experts)
+Simon (SW Experts)
+Spencer (SW Experts)
+Steven (SW Experts)
+
+> redo
+Nothing to redo.
+
+> undo
+
+> undo
+
+> setupTeam|SW Experts B|Bob
+Done.
+
+> redo
+Nothing to redo.
+
+> listTeams
+Team Name      Leader    Setup Date   Members
+All-rounder    Adam      5-Feb-2021   Andrew
+Gas+Oil Gang   Gabriel   5-Feb-2021   (no member)
+SW Experts     Samuel    1-Jan-2021   Simon, Spencer, Steven
+SW Experts B   Bob       5-Feb-2021   (no member)
+
+> listEmployees
+Adam (All-rounder)
+Andrew (All-rounder)
+Bob (SW Experts B)
+Gabriel (Gas+Oil Gang)
+Peter
+Samuel (SW Experts)
+Simon (SW Experts)
+Spencer (SW Experts)
+Steven (SW Experts)

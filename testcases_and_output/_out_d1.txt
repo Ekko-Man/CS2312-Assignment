@@ -1,0 +1,75 @@
+Please input the file pathname: _d1.txt
+
+> startNewDay|01-Jan-2021
+
+> hire|Adam
+Done.
+
+> hire|Gabriel
+Done.
+
+> setupTeam|All-rounder|Adam
+Done.
+
+> setupTeam|Gas+Oil Gang|Gabriel
+Done.
+
+> listTeams
+Team Name      Leader    Setup Date   Members    
+All-rounder    Adam      1-Jan-2021   (no member)
+Gas+Oil Gang   Gabriel   1-Jan-2021   (no member)
+
+> startNewDay|05-Feb-2021
+Done.
+
+> createProject|TSUEN WAN GAS
+Project created: [P001] TSUEN WAN GAS (5-Feb-2021)
+
+> createProject|KWAI CHUNG CABLE
+Project created: [P002] KWAI CHUNG CABLE (5-Feb-2021)
+
+> assignProject|P001|Gas+Oil Gang
+Done.
+
+> listProjects
+Code     Project Title          Created on   Status       Assigned to   Assigned on  Completed on 
+P001     TSUEN WAN GAS          5-Feb-2021   In-progress  Gas+Oil Gang  5-Feb-2021   --
+P002     KWAI CHUNG CABLE       5-Feb-2021   Pending      --            --           --
+
+> startNewDay|12-Feb-2021
+Done.
+
+> createProject|KWAI CHUNG SEWAGE
+Project created: [P003] KWAI CHUNG SEWAGE (12-Feb-2021)
+
+> assignProject|P002|All-rounder
+Done.
+
+> startNewDay|22-Feb-2021
+Done.
+
+> markCompletion|P002
+Done.
+
+> listProjects
+Code     Project Title          Created on   Status       Assigned to   Assigned on  Completed on 
+P001     TSUEN WAN GAS          5-Feb-2021   In-progress  Gas+Oil Gang  5-Feb-2021   --
+P002     KWAI CHUNG CABLE       5-Feb-2021   Completed    All-rounder   12-Feb-2021  22-Feb-2021
+P003     KWAI CHUNG SEWAGE      12-Feb-2021  Pending      --            --           --
+
+> listTeamProjects
+All-rounder: P002(Completed)
+Gas+Oil Gang: P001(In-progress)
+
+> assignProject|P003|All-rounder
+Done.
+
+> listProjects
+Code     Project Title          Created on   Status       Assigned to   Assigned on  Completed on
+P001     TSUEN WAN GAS          5-Feb-2021   In-progress  Gas+Oil Gang  5-Feb-2021   --
+P002     KWAI CHUNG CABLE       5-Feb-2021   Completed    All-rounder   12-Feb-2021  22-Feb-2021  
+P003     KWAI CHUNG SEWAGE      12-Feb-2021  In-progress  All-rounder   22-Feb-2021  --
+
+> listTeamProjects
+All-rounder: P002(Completed), P003(In-progress)
+Gas+Oil Gang: P001(In-progress)

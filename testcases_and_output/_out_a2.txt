@@ -1,0 +1,109 @@
+Please input the file pathname: _a2.txt
+
+> startNewDay|01-Jan-2021
+
+> undo
+Nothing to undo.
+
+> listEmployees
+
+> undo
+Nothing to undo.
+
+> hire|Bob
+Done.
+
+> listEmployees
+Bob
+
+> undo
+
+> listEmployees
+
+> redo
+
+> listEmployees
+Bob
+
+> undo
+
+> listEmployees
+
+> hire|Bob
+Done.
+
+> hire|Adam
+Done.
+
+> undo
+
+> undo
+
+> listEmployees
+
+> undo
+Nothing to undo.
+
+> listEmployees
+
+> redo
+
+> redo
+
+> redo
+Nothing to redo.
+
+> listEmployees
+Adam
+Bob
+
+> hire|Gabriel
+Done.
+
+> hire|Samuel
+Done.
+
+> hire|Peter
+Done.
+
+> listEmployees
+Adam
+Bob
+Gabriel
+Peter
+Samuel
+
+> undo
+
+> listEmployees
+Adam
+Bob
+Gabriel
+Samuel
+
+> redo
+
+> listEmployees
+Adam
+Bob
+Gabriel
+Peter
+Samuel
+
+> undo
+
+> listEmployees
+Adam
+Bob
+Gabriel
+Samuel
+
+> hire|Peter
+Done.
+
+> listEmployees
+Adam
+Bob
+Gabriel
+Peter
+Samuel

@@ -1,0 +1,109 @@
+Please input the file pathname: _b3.txt
+
+> startNewDay|01-Jan-2021
+
+> hire|Bob
+Done.
+
+> hire|Adam
+Done.
+
+> hire|Gabriel
+Done.
+
+> hire|Peter
+Done.
+
+> hire|Andrew
+Done.
+
+> hire|Steven
+Done.
+
+> hire|Spencer
+Done.
+
+> joinTeam|SW Experts|Steven 
+Team SW Experts is not found!
+
+> setupTeam|SW Experts|Samuel
+Employee Samuel is not found!
+
+> hire|Samuel
+Done.
+
+> setupTeam|SW Experts|Samuel
+Done.
+
+> setupTeam|SW Experts|Andrew
+Team name already exists!    
+
+> joinTeam|SW Experts|Steven 
+Done.
+
+> startNewDay|05-Feb-2021    
+Done.
+
+> setupTeam|Gas+Oil Gang|Samuel
+Employee Samuel already belongs to team SW Experts!
+
+> setupTeam|Gas+Oil Gang|Steven
+Employee Steven already belongs to team SW Experts!
+
+> setupTeam|Gas+Oil Gang|Gabriel
+Done.
+
+> joinTeam|SW Experts|Simon
+Employee Simon is not found!
+
+> hire|Simon
+Done.
+
+> joinTeam|SW Experts|Simon
+Done.
+
+> undo
+
+> undo
+
+> listTeams
+Team Name      Leader    Setup Date   Members
+Gas+Oil Gang   Gabriel   5-Feb-2021   (no member)
+SW Experts     Samuel    1-Jan-2021   Steven
+
+> undo
+
+> undo
+
+> listTeams
+Team Name      Leader    Setup Date   Members
+SW Experts     Samuel    1-Jan-2021   Steven
+
+> redo
+
+> redo
+
+> listTeams
+Team Name      Leader    Setup Date   Members
+Gas+Oil Gang   Gabriel   5-Feb-2021   (no member)
+SW Experts     Samuel    1-Jan-2021   Steven
+
+> redo
+
+> redo
+
+> listTeams
+Team Name      Leader    Setup Date   Members
+Gas+Oil Gang   Gabriel   5-Feb-2021   (no member)
+SW Experts     Samuel    1-Jan-2021   Simon, Steven
+
+> listEmployees
+Adam
+Andrew
+Bob
+Gabriel (Gas+Oil Gang)
+Peter
+Samuel (SW Experts)
+Simon (SW Experts)
+Spencer
+Steven (SW Experts)

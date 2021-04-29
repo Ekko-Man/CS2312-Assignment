@@ -1,0 +1,74 @@
+Please input the file pathname: _d3.txt
+
+> startNewDay|01-Jan-2021
+
+> hire|Adam
+Done.
+
+> hire|Gabriel
+Done.
+
+> setupTeam|All-rounder|Adam
+Done.
+
+> setupTeam|Gas+Oil Gang|Gabriel
+Done.
+
+> listTeams
+Team Name      Leader    Setup Date   Members    
+All-rounder    Adam      1-Jan-2021   (no member)
+Gas+Oil Gang   Gabriel   1-Jan-2021   (no member)
+
+> startNewDay|05-Feb-2021
+Done.
+
+> createProject|TSUEN WAN GAS
+Project created: [P001] TSUEN WAN GAS (5-Feb-2021)
+
+> createProject|KWAI CHUNG CABLE
+Project created: [P002] KWAI CHUNG CABLE (5-Feb-2021)
+
+> assignProject|P003|Gas+Oil Gang
+Project P003 is not found!
+
+> assignProject|P001|Sewage+Oil Gang
+Team Sewage+Oil Gang is not found!
+
+> assignProject|P001|Gas+Oil Gang
+Done.
+
+> assignProject|P001|All-rounder
+Project P001 has been assigned to team Gas+Oil Gang on 5-Feb-2021 already!
+
+> listTeamProjects
+All-rounder: 
+Gas+Oil Gang: P001(In-progress)
+
+> listProjects
+Code     Project Title          Created on   Status       Assigned to   Assigned on  Completed on 
+P001     TSUEN WAN GAS          5-Feb-2021   In-progress  Gas+Oil Gang  5-Feb-2021   --
+P002     KWAI CHUNG CABLE       5-Feb-2021   Pending      --            --           --
+
+> startNewDay|12-Feb-2021
+Done.
+
+> markCompletion|P003
+Project P003 is not found!
+
+> markCompletion|P002
+Assignment of project P002 has not been started!
+
+> markCompletion|P001
+Done.
+
+> markCompletion|P001
+Project P001 has been marked as completed before!
+
+> listProjects
+Code     Project Title          Created on   Status       Assigned to   Assigned on  Completed on 
+P001     TSUEN WAN GAS          5-Feb-2021   Completed    Gas+Oil Gang  5-Feb-2021   12-Feb-2021
+P002     KWAI CHUNG CABLE       5-Feb-2021   Pending      --            --           --
+
+> listTeamProjects
+All-rounder:
+Gas+Oil Gang: P001(Completed)

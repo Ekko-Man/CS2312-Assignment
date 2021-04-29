@@ -1,0 +1,69 @@
+Please input the file pathname: _e3.txt
+
+> startNewDay|01-Jan-2021       
+
+> hire|Adam
+Done.
+
+> hire|Gabriel
+Done.
+
+> setupTeam|All-rounder|Adam    
+Done.
+
+> setupTeam|Gas+Oil Gang|Gabriel
+Done.
+
+> createProject|TSUEN WAN GAS
+Project created: [P001] TSUEN WAN GAS (1-Jan-2021)
+
+> createProject|TAI WAI GAS
+Project created: [P002] TAI WAI GAS (1-Jan-2021)
+
+> createProject|KWAI CHUNG SEWAGE
+Project created: [P003] KWAI CHUNG SEWAGE (1-Jan-2021)     
+
+> startNewDay|18-Mar-2021
+Done.
+
+> createExtensionProject|P004|TW Gas Enhancement
+Project P004 is not found!
+
+> createExtensionProject|P002|TW Gas Enhancement
+Project created: [P002-E1] TW Gas Enhancement (18-Mar-2021)
+
+> startNewDay|20-Mar-2021
+Done.
+
+> createExtensionProject|P002|TW Gas Enh. II
+Project created: [P002-E2] TW Gas Enh. II (20-Mar-2021)    
+
+> startNewDay|22-Mar-2021
+Done.
+
+> markCompletion|P002-E1
+Assignment of project P002-E1 has not been started!
+
+> assignProject|P002-E1|Gas+Oil Gang
+Done.
+
+> startNewDay|28-Mar-2021
+Done.
+
+> markCompletion|P002-E1
+Done.
+
+> markCompletion|P002-E1
+Project P002-E1 has been marked as completed before!
+
+> listProjects
+Code     Project Title          Created on   Status       Assigned to   Assigned on  Completed on
+P001     TSUEN WAN GAS          1-Jan-2021   Pending      --            --           --
+P002     TAI WAI GAS            1-Jan-2021   Pending      --            --           --
+P002-E1  TW Gas Enhancement     18-Mar-2021  Completed    Gas+Oil Gang  22-Mar-2021  28-Mar-2021
+P002-E2  TW Gas Enh. II         20-Mar-2021  Pending      --            --           --
+P003     KWAI CHUNG SEWAGE      1-Jan-2021   Pending      --            --           --
+
+> listTeamProjects
+All-rounder:
+Gas+Oil Gang: P002-E1(Completed)

@@ -1,0 +1,147 @@
+Please input the file pathname: _e1.txt
+
+> startNewDay|01-Jan-2021
+
+> hire|Bob
+Done.
+
+> hire|Adam
+Done.
+
+> hire|Gabriel
+Done.
+
+> hire|Samuel
+Done.
+
+> setupTeam|All-rounder|Adam
+Done.
+
+> setupTeam|Gas+Oil Gang|Gabriel
+Done.
+
+> startNewDay|01-Feb-2021
+Done.
+
+> setupTeam|SW Experts|Samuel
+Done.
+
+> setupTeam|SW Experts B|Bob
+Done.
+
+> createProject|TSUEN WAN GAS
+Project created: [P001] TSUEN WAN GAS (1-Feb-2021)    
+
+> createProject|KWAI CHUNG CABLE
+Project created: [P002] KWAI CHUNG CABLE (1-Feb-2021) 
+
+> createProject|KWAI CHUNG SEWAGE
+Project created: [P003] KWAI CHUNG SEWAGE (1-Feb-2021)
+
+> assignProject|P001|All-rounder
+Done.
+
+> listProjects
+Code     Project Title          Created on   Status       Assigned to   Assigned on  Completed on 
+P001     TSUEN WAN GAS          1-Feb-2021   In-progress  All-rounder   1-Feb-2021   --
+P002     KWAI CHUNG CABLE       1-Feb-2021   Pending      --            --           --
+P003     KWAI CHUNG SEWAGE      1-Feb-2021   Pending      --            --           --
+
+> listTeamProjects
+All-rounder: P001(In-progress)
+Gas+Oil Gang: 
+SW Experts: 
+SW Experts B: 
+
+> startNewDay|01-Mar-2021
+Done.
+
+> createExtensionProject|P002|Phase 2 for KC Cable
+Project created: [P002-E1] Phase 2 for KC Cable (1-Mar-2021)
+
+> createProject|TAI WAI GAS
+Project created: [P004] TAI WAI GAS (1-Mar-2021)
+
+> startNewDay|18-Mar-2021
+Done.
+
+> createExtensionProject|P004|TW Gas Enhancement
+Project created: [P004-E1] TW Gas Enhancement (18-Mar-2021)
+
+> createExtensionProject|P003|KC Sewage Fixes 2021
+Project created: [P003-E1] KC Sewage Fixes 2021 (18-Mar-2021)
+
+> createExtensionProject|P003|Phase 2 for KC Sewage
+Project created: [P003-E2] Phase 2 for KC Sewage (18-Mar-2021)
+
+> listProjects
+Code     Project Title          Created on   Status       Assigned to   Assigned on  Completed on 
+P001     TSUEN WAN GAS          1-Feb-2021   In-progress  All-rounder   1-Feb-2021   --
+P002     KWAI CHUNG CABLE       1-Feb-2021   Pending      --            --           --
+P002-E1  Phase 2 for KC Cable   1-Mar-2021   Pending      --            --           --
+P003     KWAI CHUNG SEWAGE      1-Feb-2021   Pending      --            --           --
+P003-E1  KC Sewage Fixes 2021   18-Mar-2021  Pending      --            --           --
+P003-E2  Phase 2 for KC Sewage  18-Mar-2021  Pending      --            --           --
+P004     TAI WAI GAS            1-Mar-2021   Pending      --            --           --
+P004-E1  TW Gas Enhancement     18-Mar-2021  Pending      --            --           --
+
+> assignProject|P003-E2|SW Experts B
+Done.
+
+> startNewDay|22-Mar-2021
+Done.
+
+> assignProject|P004|Gas+Oil Gang
+Done.
+
+> assignProject|P004-E1|All-rounder
+Done.
+
+> assignProject|P002-E1|All-rounder
+Done.
+
+> listProjects
+Code     Project Title          Created on   Status       Assigned to   Assigned on  Completed on
+P001     TSUEN WAN GAS          1-Feb-2021   In-progress  All-rounder   1-Feb-2021   --
+P002     KWAI CHUNG CABLE       1-Feb-2021   Pending      --            --           --
+P002-E1  Phase 2 for KC Cable   1-Mar-2021   In-progress  All-rounder   22-Mar-2021  --
+P003     KWAI CHUNG SEWAGE      1-Feb-2021   Pending      --            --           --
+P003-E1  KC Sewage Fixes 2021   18-Mar-2021  Pending      --            --           --
+P003-E2  Phase 2 for KC Sewage  18-Mar-2021  In-progress  SW Experts B  18-Mar-2021  --
+P004     TAI WAI GAS            1-Mar-2021   In-progress  Gas+Oil Gang  22-Mar-2021  --
+P004-E1  TW Gas Enhancement     18-Mar-2021  In-progress  All-rounder   22-Mar-2021  --
+
+> listTeamProjects
+All-rounder: P001(In-progress), P002-E1(In-progress), P004-E1(In-progress)
+Gas+Oil Gang: P004(In-progress)
+SW Experts:
+SW Experts B: P003-E2(In-progress)
+
+> startNewDay|25-Mar-2021
+Done.
+
+> markCompletion|P001
+Done.
+
+> markCompletion|P004-E1
+Done.
+
+> markCompletion|P004
+Done.
+
+> listProjects
+Code     Project Title          Created on   Status       Assigned to   Assigned on  Completed on 
+P001     TSUEN WAN GAS          1-Feb-2021   Completed    All-rounder   1-Feb-2021   25-Mar-2021
+P002     KWAI CHUNG CABLE       1-Feb-2021   Pending      --            --           --
+P002-E1  Phase 2 for KC Cable   1-Mar-2021   In-progress  All-rounder   22-Mar-2021  --
+P003     KWAI CHUNG SEWAGE      1-Feb-2021   Pending      --            --           --
+P003-E1  KC Sewage Fixes 2021   18-Mar-2021  Pending      --            --           --
+P003-E2  Phase 2 for KC Sewage  18-Mar-2021  In-progress  SW Experts B  18-Mar-2021  --
+P004     TAI WAI GAS            1-Mar-2021   Completed    Gas+Oil Gang  22-Mar-2021  25-Mar-2021
+P004-E1  TW Gas Enhancement     18-Mar-2021  Completed    All-rounder   22-Mar-2021  25-Mar-2021
+
+> listTeamProjects
+All-rounder: P001(Completed), P002-E1(In-progress), P004-E1(Completed)
+Gas+Oil Gang: P004(Completed)
+SW Experts:
+SW Experts B: P003-E2(In-progress)

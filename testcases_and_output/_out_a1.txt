@@ -1,0 +1,27 @@
+Please input the file pathname: _a1.txt
+
+> startNewDay|01-Jan-2021
+
+> listEmployees
+
+> hire|Bob
+Done.
+
+> hire|Adam    
+Done.
+
+> hire|Gabriel 
+Done.
+
+> hire|Samuel  
+Done.
+
+> hire|Peter   
+Done.
+
+> listEmployees
+Adam
+Bob
+Gabriel        
+Peter
+Samuel

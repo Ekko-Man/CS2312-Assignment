@@ -1,0 +1,87 @@
+Please input the file pathname: _b1.txt
+
+> startNewDay|01-Jan-2021
+
+> hire|Bob
+Done.
+
+> hire|Adam
+Done.
+
+> hire|Gabriel
+Done.
+
+> hire|Samuel
+Done.
+
+> hire|Peter
+Done.
+
+> setupTeam|SW Experts|Samuel
+Done.
+
+> setupTeam|SW Experts B|Bob
+Done.
+
+> listTeams
+Team Name      Leader    Setup Date   Members    
+SW Experts     Samuel    1-Jan-2021   (no member)
+SW Experts B   Bob       1-Jan-2021   (no member)
+
+> startNewDay|05-Feb-2021
+Done.
+
+> setupTeam|All-rounder|Adam
+Done.
+
+> setupTeam|Gas+Oil Gang|Gabriel
+Done.
+
+> hire|Andrew
+Done.
+
+> hire|Steven
+Done.
+
+> hire|Simon
+Done.
+
+> hire|Spencer
+Done.
+
+> hire|Sawyer
+Done.
+
+> joinTeam|All-rounder|Andrew
+Done.
+
+> joinTeam|SW Experts|Steven
+Done.
+
+> joinTeam|SW Experts|Simon
+Done.
+
+> joinTeam|SW Experts|Spencer
+Done.
+
+> joinTeam|SW Experts|Sawyer
+Done.
+
+> listEmployees
+Adam (All-rounder)
+Andrew (All-rounder)
+Bob (SW Experts B)
+Gabriel (Gas+Oil Gang)
+Peter
+Samuel (SW Experts)
+Sawyer (SW Experts)
+Simon (SW Experts)
+Spencer (SW Experts)
+Steven (SW Experts)
+
+> listTeams
+Team Name      Leader    Setup Date   Members
+All-rounder    Adam      5-Feb-2021   Andrew
+Gas+Oil Gang   Gabriel   5-Feb-2021   (no member)
+SW Experts     Samuel    1-Jan-2021   Sawyer, Simon, Spencer, Steven
+SW Experts B   Bob       1-Jan-2021   (no member)

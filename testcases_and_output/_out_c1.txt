@@ -1,0 +1,22 @@
+Please input the file pathname: _c1.txt
+
+> startNewDay|01-Jan-2021
+
+> createProject|TSUEN WAN GAS
+Project created: [P001] TSUEN WAN GAS (1-Jan-2021)
+
+> createProject|KWAI CHUNG CABLE
+Project created: [P002] KWAI CHUNG CABLE (1-Jan-2021)
+
+> startNewDay|02-Feb-2021
+Done.
+
+> createProject|KWAI CHUNG SEWAGE
+Project created: [P003] KWAI CHUNG SEWAGE (2-Feb-2021)
+
+> listProjects
+Code     Project Title          Created on   Status       Assigned to   Assigned on  Completed on
+P001     TSUEN WAN GAS          1-Jan-2021   Pending      --            --           --
+P002     KWAI CHUNG CABLE       1-Jan-2021   Pending      --            --           --
+P003     KWAI CHUNG SEWAGE      2-Feb-2021   Pending      --            --           --
+

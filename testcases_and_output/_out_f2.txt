@@ -1,0 +1,302 @@
+Please input the file pathname: _f2.txt
+
+> startNewDay|01-Jan-2021
+
+> hire|Adam
+Done.
+
+> hire|Samuel
+Done.
+
+> hire|Andrew
+Done.
+
+> hire|Aron
+Done.
+
+> hire|Bob
+Done.
+
+> hire|Bill
+Done.
+
+> hire|Steven
+Done.
+
+> hire|Simon
+Done.
+
+> hire|Spencer
+Done.
+
+> hire|Sawyer
+Done.
+
+> setupTeam|All-rounder|Adam 
+Done.
+
+> setupTeam|SW Experts|Samuel
+Done.
+
+> joinTeam|All-rounder|Andrew
+Done.
+
+> joinTeam|All-rounder|Aron  
+Done.
+
+> joinTeam|SW Experts|Steven 
+Done.
+
+> joinTeam|SW Experts|Simon  
+Done.
+
+> joinTeam|SW Experts|Spencer
+Done.
+
+> joinTeam|SW Experts|Sawyer
+Done.
+
+> listEmployees
+Adam (All-rounder)
+Andrew (All-rounder)
+Aron (All-rounder)
+Bill
+Bob
+Samuel (SW Experts)
+Sawyer (SW Experts)
+Simon (SW Experts)
+Spencer (SW Experts)
+Steven (SW Experts)
+
+> listTeams
+Team Name      Leader    Setup Date   Members
+All-rounder    Adam      1-Jan-2021   Andrew, Aron
+SW Experts     Samuel    1-Jan-2021   Sawyer, Simon, Spencer, Steven
+
+> createProject|TSUEN WAN GAS
+Project created: [P001] TSUEN WAN GAS (1-Jan-2021)
+
+> createProject|KWAI CHUNG CABLE
+Project created: [P002] KWAI CHUNG CABLE (1-Jan-2021)
+
+> createProject|KWAI CHUNG SEWAGE
+Project created: [P003] KWAI CHUNG SEWAGE (1-Jan-2021)
+
+> assignProject|P001|All-rounder
+Done.
+
+> startNewDay|18-Feb-2021
+Done.
+
+> assignProject|P003|SW Experts|Adam|Andrew|Bill
+Done.
+
+> startNewDay|01-Mar-2021
+Done.
+
+> createExtensionProject|P002|Phase 2 for KC Cable
+Project created: [P002-E1] Phase 2 for KC Cable (1-Mar-2021)
+
+> startNewDay|18-Mar-2021
+Done.
+
+> createExtensionProject|P003|KC Sewage Fixes 2021
+Project created: [P003-E1] KC Sewage Fixes 2021 (18-Mar-2021)
+
+> createExtensionProject|P003|Phase 2 for KC Sewage
+Project created: [P003-E2] Phase 2 for KC Sewage (18-Mar-2021)
+
+> assignProject|P003-E2|All-rounder|Sawyer
+Done.
+
+> listProjects
+Code     Project Title          Created on   Status       Assigned to   Assigned on  Completed on
+P001     TSUEN WAN GAS          1-Jan-2021   In-progress  All-rounder   1-Jan-2021   --
+P002     KWAI CHUNG CABLE       1-Jan-2021   Pending      --            --           --
+P002-E1  Phase 2 for KC Cable   1-Mar-2021   Pending      --            --           --
+P003     KWAI CHUNG SEWAGE      1-Jan-2021   In-progress  SW Experts    18-Feb-2021  --
+P003-E1  KC Sewage Fixes 2021   18-Mar-2021  Pending      --            --           --
+P003-E2  Phase 2 for KC Sewage  18-Mar-2021  In-progress  All-rounder   18-Mar-2021  --
+
+> listProjectStaff|P001
+Project team: All-rounder
+Project team members: Adam (The Leader), Andrew, Aron
+External support: (none)
+
+> listProjectStaff|P003
+Project team: SW Experts
+Project team members: Samuel (The Leader), Sawyer, Simon, Spencer, Steven
+External support: Adam, Andrew, Bill
+
+> listProjectStaff|P003-E2
+Project team: All-rounder
+Project team members: Adam (The Leader), Andrew, Aron
+External support: Sawyer
+
+> listTeamProjects
+All-rounder: P001(In-progress), P003-E2(In-progress)
+SW Experts: P003(In-progress)
+
+> listStaffParticipations
+Adam: P001(In-progress), P003(In-progress), P003-E2(In-progress)
+Andrew: P001(In-progress), P003(In-progress), P003-E2(In-progress)
+Aron: P001(In-progress), P003-E2(In-progress)
+Bill: P003(In-progress)
+Bob: (no project)
+Samuel: P003(In-progress)
+Sawyer: P003(In-progress), P003-E2(In-progress)
+Simon: P003(In-progress)
+Spencer: P003(In-progress)
+Steven: P003(In-progress)
+
+> undo
+
+> undo
+
+> undo
+
+> undo
+
+> undo
+
+> undo
+
+> undo
+
+> listProjects
+Code     Project Title          Created on   Status       Assigned to   Assigned on  Completed on
+P001     TSUEN WAN GAS          1-Jan-2021   In-progress  All-rounder   1-Jan-2021   --
+P002     KWAI CHUNG CABLE       1-Jan-2021   Pending      --            --           --
+P003     KWAI CHUNG SEWAGE      1-Jan-2021   Pending      --            --           --
+
+> listProjectStaff|P001
+Project team: All-rounder
+Project team members: Adam (The Leader), Andrew, Aron
+External support: (none)
+
+> listProjectStaff|P003
+Assignment of project P003 has not been started!
+
+> listProjectStaff|P003-E1
+Project P003-E1 is not found!
+
+> listProjectStaff|P003-E2
+Project P003-E2 is not found!
+
+> listTeamProjects
+All-rounder: P001(In-progress)
+SW Experts:
+
+> listStaffParticipations
+Adam: P001(In-progress)
+Andrew: P001(In-progress)
+Aron: P001(In-progress)
+Bill: (no project)
+Bob: (no project)
+Samuel: (no project)
+Sawyer: (no project)
+Simon: (no project)
+Spencer: (no project)
+Steven: (no project)
+
+> redo
+
+> redo
+
+> redo
+
+> listProjects
+Code     Project Title          Created on   Status       Assigned to   Assigned on  Completed on 
+P001     TSUEN WAN GAS          1-Jan-2021   In-progress  All-rounder   1-Jan-2021   --
+P002     KWAI CHUNG CABLE       1-Jan-2021   Pending      --            --           --
+P002-E1  Phase 2 for KC Cable   1-Mar-2021   Pending      --            --           --
+P003     KWAI CHUNG SEWAGE      1-Jan-2021   In-progress  SW Experts    18-Feb-2021  --
+
+> listProjectStaff|P001
+Project team: All-rounder
+Project team members: Adam (The Leader), Andrew, Aron
+External support: (none)
+
+> listProjectStaff|P003
+Project team: SW Experts
+Project team members: Samuel (The Leader), Sawyer, Simon, Spencer, Steven
+External support: Adam, Andrew, Bill
+
+> listProjectStaff|P003-E1
+Project P003-E1 is not found!
+
+> listProjectStaff|P003-E2
+Project P003-E2 is not found!
+
+> listTeamProjects
+All-rounder: P001(In-progress)
+SW Experts: P003(In-progress)
+
+> listStaffParticipations
+Adam: P001(In-progress), P003(In-progress)
+Andrew: P001(In-progress), P003(In-progress)
+Aron: P001(In-progress)
+Bill: P003(In-progress)
+Bob: (no project)
+Samuel: P003(In-progress)
+Sawyer: P003(In-progress)
+Simon: P003(In-progress)
+Spencer: P003(In-progress)
+Steven: P003(In-progress)
+
+> createExtensionProject|P003|Phase 2 for KC Sewage
+Project created: [P003-E1] Phase 2 for KC Sewage (1-Mar-2021)
+
+> redo
+Nothing to redo.
+
+> assignProject|P003-E1|All-rounder|Simon
+Done.
+
+> startNewDay|28-Mar-2021
+Done.
+
+> markCompletion|P003-E1
+Done.
+
+> listProjects
+Code     Project Title          Created on   Status       Assigned to   Assigned on  Completed on
+P001     TSUEN WAN GAS          1-Jan-2021   In-progress  All-rounder   1-Jan-2021   --
+P002     KWAI CHUNG CABLE       1-Jan-2021   Pending      --            --           --
+P002-E1  Phase 2 for KC Cable   1-Mar-2021   Pending      --            --           --
+P003     KWAI CHUNG SEWAGE      1-Jan-2021   In-progress  SW Experts    18-Feb-2021  --
+P003-E1  Phase 2 for KC Sewage  1-Mar-2021   Completed    All-rounder   1-Mar-2021   28-Mar-2021
+
+> listProjectStaff|P001
+Project team: All-rounder
+Project team members: Adam (The Leader), Andrew, Aron
+External support: (none)
+
+> listProjectStaff|P003
+Project team: SW Experts
+Project team members: Samuel (The Leader), Sawyer, Simon, Spencer, Steven
+External support: Adam, Andrew, Bill
+
+> listProjectStaff|P003-E1
+Project team: All-rounder
+Project team members: Adam (The Leader), Andrew, Aron
+External support: Simon
+
+> listProjectStaff|P003-E2
+Project P003-E2 is not found!
+
+> listTeamProjects
+All-rounder: P001(In-progress), P003-E1(Completed)
+SW Experts: P003(In-progress)
+
+> listStaffParticipations
+Adam: P001(In-progress), P003(In-progress), P003-E1(Completed)
+Andrew: P001(In-progress), P003(In-progress), P003-E1(Completed)
+Aron: P001(In-progress), P003-E1(Completed)
+Bill: P003(In-progress)
+Bob: (no project)
+Samuel: P003(In-progress)
+Sawyer: P003(In-progress)
+Simon: P003(In-progress), P003-E1(Completed)
+Spencer: P003(In-progress)
+Steven: P003(In-progress)
